@@ -1,0 +1,21 @@
+span {
+  padding: 2px 6px;
+  margin: 4px;
+  font-size: 12px;
+  color: #ffffff;
+  background-color: #4f46e589;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition:
+    background-color 0.2s ease,
+    transform 0.1s ease;
+}
+
+span:hover {
+  background-color: #4338ca;
+}
+
+span:active {
+  transform: scale(0.97);
+}

@@ -8,5 +8,5 @@ export const request = ({ method, url }: RequestProps) => {
     headers: {
       'Content-Type': 'application/json',
     },
-  });
+  }).then((response) => response.data);
 };

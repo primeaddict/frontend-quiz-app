@@ -1,1 +1,2 @@
-export * from './getCategories';
+export * from './hooks';
+export * from './interface';
