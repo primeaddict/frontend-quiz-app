@@ -1,0 +1,74 @@
+$primary: #4f46e5; // indigo
+$primary-hover: #4338ca;
+$text-dark: #111827;
+$text-muted: #6b7280;
+$bg-start: #eef2ff;
+$bg-end: #ffffff;
+
+.notfound {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, $bg-start, $bg-end);
+  text-align: center;
+  padding: 24px;
+
+  .code {
+    font-size: 120px;
+    font-weight: 800;
+    color: $primary;
+    margin: 0;
+  }
+
+  .title {
+    font-size: 28px;
+    margin: 12px 0;
+    color: $text-dark;
+  }
+
+  .description {
+    font-size: 16px;
+    color: $text-muted;
+    max-width: 420px;
+    margin-bottom: 24px;
+  }
+
+  .homeButton {
+    padding: 12px 24px;
+    font-size: 16px;
+    font-weight: 500;
+    color: #ffffff;
+    background-color: $primary;
+    border-radius: 6px;
+    text-decoration: none;
+    cursor: pointer;
+    transition:
+      background-color 0.2s ease,
+      transform 0.1s ease;
+
+    &:hover {
+      background-color: $primary-hover;
+    }
+
+    &:active {
+      transform: scale(0.97);
+    }
+  }
+}
+@keyframes float {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-8px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.code {
+  animation: float 3s ease-in-out infinite;
+}

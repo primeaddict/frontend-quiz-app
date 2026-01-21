@@ -1,0 +1,22 @@
+.link {
+  padding: 12px 24px;
+  margin: 12px;
+  font-size: 16px;
+  font-weight: 500;
+  color: #ffffff;
+  background-color: #4f46e5; /* default */
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition:
+    background-color 0.2s ease,
+    transform 0.1s ease;
+}
+
+.link:is(:hover, :active) {
+  background-color: #4338ca;
+}
+
+.link:active {
+  transform: scale(0.97);
+}
